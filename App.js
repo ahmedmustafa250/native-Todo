@@ -32,7 +32,7 @@ export default function App() {
         <View style={styles.footer}>
                   <View style={styles.inputCover}>
                       <TextInput
-                          style={{height: 40,backgroundColor:'white'}}
+                          style={styles.input}
                           placeholder="Add Todo Item .."
                           onChangeText={text => setText(text)}
                           defaultValue={text}
@@ -52,10 +52,10 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    padding: 20,
+    paddingTop: 30,
   },
   header:{
-      flex:0.8,
+      flex:1,
       backgroundColor:'#27f',
       flexDirection:'column',
       justifyContent:'center',
@@ -65,49 +65,37 @@ const styles = StyleSheet.create({
       color:'white',
       fontSize:25,
   },
-
-
-
-
   body:{
     flex:7,
   
   }
-
-
-
-
-
-
-
   ,footer:{
     flex:0.4,
     flexDirection:'row',
     backgroundColor:'blue',
     alignContent:"space-around",
     backgroundColor:'#27f',
-    padding:20
-
+    padding:20,
+  },
+  input:{
+    backgroundColor:'white',
+    height:30
   },
   inputCover:{
     flex:2.5,
-    width:70
+    width:70,
   },
   buttonCover:{
     flex:1,
-    width:30
+    marginLeft:10,
   },
   button:{
     backgroundColor:'white',
     color:"#27f",
     fontSize:20,
-    width:60,
-    marginLeft:10,
-    borderRadius:15,
-    paddingLeft:10,
-    paddingRight:10,
-    paddingTop:5,
-    paddingBottom:10,
+    height:30,
+    borderRadius:10,
+    textAlign:'center'
   }
 
 });
